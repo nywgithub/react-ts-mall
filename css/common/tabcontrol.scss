@@ -1,0 +1,25 @@
+.Tab_tittle_wrap{
+    display: flex;
+    font-size: 14px;
+    height: 26px;
+    padding: 0 20px;
+    border-bottom: 1px solid #e6ecf2;
+    .Tab_tittle{
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    .active{
+        color: #E64545;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 72%;
+            height: 2px;
+            opacity: 1;
+            bottom: -1px;
+            left: 14%;
+            background: #e64545;
+        }
+    }
+}

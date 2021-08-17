@@ -1,0 +1,306 @@
+@import "../common/tabcontrol.scss";
+@import "../common/mallcommon.scss";
+@import "../common/head.scss";
+//公共样式
+.content-wrap{
+    background: #ffffff;
+    border: 1px solid #e6ecf2;
+}
+
+.dialog-content{
+    .gift-detail{
+        display: flex;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dae0e6;
+    }
+    .gift-img{
+        width: 140px;
+        height: 140px;
+        margin-right: 10px;
+        // background: rgba(0,0,0,0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 110px;
+            max-height: 110px;
+        }
+        .gift-mask{
+            width: 140px;
+            height:  140px;
+            background: rgba(0, 0, 0, .03);
+            position: absolute;
+        }
+    }
+    .gift-info{
+        position: relative;
+        width: 430px;
+        .gift-title{
+            height: 21px;
+            font-size: 14px;
+            color: #222222;
+            line-height: 21px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .gift-title-dialog{
+            font-size: 14px;
+            height: auto;
+            color: #222222;
+            line-height: 18px;
+            text-align: left;
+            word-break: break-word;
+        }
+        .gift-bottom{
+            position: absolute;
+            bottom: 0;
+        }
+        .gift-desc{
+            display: flex;
+            font-size: 12px;
+            height: 18px;
+            color: #888888;
+            line-height: 18px;
+            margin: 5px 0 0;
+        }
+        .gift-type{
+            margin-right: 35px;
+        }
+        .gift-need{
+            height: 21px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #e64545;
+            margin-bottom: 10px;
+            line-height: 21px;
+        }
+        .gift-btn{
+            width: 86px;
+            height: 31px;
+            background: #e64545;
+            border-radius: 3px;
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 31px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .gift-btn-disabled{
+            background:rgb(167, 166, 162);
+            pointer-events: none;
+            cursor: none;
+        }
+    }
+    .text-desc{
+        font-size: 14px;
+        color: #888888; 
+        .text-desc-title{
+            margin: 15px 0 10px;
+        }
+        .text-desc-info{
+            word-wrap:break-word;
+            // margin-bottom: 30px;
+            p{
+                line-height:27px;
+            }
+        }
+        .text-desc-link{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+body .tip{
+    width:240px;
+    @media screen and (min-width: 1780px) and (max-width: 1920px) {
+        width: 220px;
+    }
+    @media  screen and (min-width: 1510px) and (max-width: 1780px) {
+        width: 194px;
+    }
+    @media  screen and (min-width: 1298px) and (max-width: 1510px) {
+        width: 159px;
+    }
+    @media  screen and (min-width: 1024px) and (max-width: 1298px) {
+        width: 120px;
+    }
+    @media  screen and  (max-width: 1024px) {
+        width: 100px;
+    }
+    .tooltip-content{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media  screen and  (max-width: 1510px) {
+            padding: 0px;
+        }
+    }
+    .tooltip-title{
+        text-align: center;
+        height: 21px;
+        line-height: 21px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #222222;
+    }
+    .tooltip-title-detail{
+        margin: 5px 0 10px; 
+    }
+    .td-code{
+        .invite-new-img{
+            margin: 0 0 10px;
+            width: 180px;
+            background:url('/envo/supplier-integral/img/invite.png') no-repeat;
+            height: 180px;
+            background-size: contain;
+            @media  screen and (min-width: 1510px) and (max-width: 1780px) {
+                margin: 10px 0 10px;
+                width: 170px;
+                height: 170px;
+            }
+            @media  screen and (min-width: 1298px) and (max-width: 1510px) {
+                margin: 10px 0 10px;
+                width: 150px;
+                height: 150px;
+            }
+            @media  screen and (min-width: 1024px) and (max-width: 1298px) {
+                margin: 10px 0 10px;
+                width: 120px;
+                height: 120px;
+            }
+            @media  screen and  (max-width: 1024px) {
+                margin: 10px 0 10px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .app-download-img{
+            margin: 0 0 10px;
+            width: 180px;
+            background:url('/envo/supplier-integral/img/appDownload.png') no-repeat;
+            height: 180px;
+            background-size: contain;
+            @media  screen and (min-width: 1510px) and (max-width: 1780px) {
+                width: 170px;
+                height: 170px;
+            }
+            @media  screen and (min-width: 1298px) and (max-width: 1510px) {
+                width: 150px;
+                height: 150px;
+            }
+            @media  screen and (min-width: 1024px) and (max-width: 1298px) {
+                width: 120px;
+                height: 120px;
+            }
+            @media  screen and  (max-width: 1024px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .tooltip-bottom{
+        height: 18px;
+        font-size: 12px;
+        color: #888888;
+        line-height: 18px;
+    }
+    .tooltip-jl{
+        margin-top: 10px;
+        .jl-top{
+            display: flex;
+            justify-content: space-between;
+            height: 18px;
+            font-size: 12px;
+            text-align: center;
+            color: #222222;
+            line-height: 18px;
+            align-items: center;
+            margin-bottom: 5px;
+            .jl-line{
+                width: 61px;
+                height: 1px;
+                background: #DAE0E6;
+                @media  screen and  (max-width: 1780px) {
+                    width: 32px;
+                }
+            }
+        }
+        .jl-text{
+            margin: 0 5px
+        }
+        .jl-w{
+            height: auto;
+            font-size: 12px;
+            text-align: center;
+            color: #888888;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
+        .jl-up{
+            margin-top: 5px;
+            height: 21px;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            color: #222222;
+            line-height: 21px;
+        }
+    }
+}
+
+.ft-form .ft-form-item .ft-textarea-common .error{
+    color: #e64545;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline;
+}
+
+.pager-wrap-content{
+    .pager{
+        a{
+            cursor: pointer;
+        }
+    }
+}
+
+.ft-table .no-data-td{
+    border-width: 0px !important;
+}
+.form-validate-span{
+    display: block;
+    padding-left: 170px;
+    padding-top: 15px;
+}
+.no-data{
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 188px;
+    font-size: 14px;
+    color:#888888;
+    transform: translateX(-50%);
+    .no-data-img{
+        height: 53px;
+        background:url('/envo/supplier-integral/img/empty.png') no-repeat;
+        margin-bottom: 15px;
+        background-position: center;
+    }
+}
+.sticky-push{
+    pointer-events: none;
+}
+.theclass{
+    z-index:99999 !important
+}
+.mall-list .ft-loading__page.is-l{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+body .pagerNotShow{
+    display: none;
+}

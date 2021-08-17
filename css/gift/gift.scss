@@ -1,0 +1,112 @@
+.vo-nav{
+    display: none;
+}
+body .m-header .grid{
+    width: 1240px;
+}
+.mall-body{
+    // position: relative;
+    // min-height: 1840px;
+    width: 1240px;
+    margin: 0 auto;
+    .vo-main-title{
+        margin: 20px 0 23px;
+    }
+    .vo-next-title-text{
+        font-size: 14px;
+    }
+    .no-data{
+        top: 50%;
+    }
+}
+.mall-top{
+    height: 300px;
+    margin-bottom: 17px;
+    .welcome-img{
+        width:1020px;
+        height: 300px;
+        float: left;
+        background:url('/envo/supplier-integral/img/topBanner.png') no-repeat;
+    }
+    .is-login-state{
+        align-items: flex-start;
+        padding-left: 40px;
+        text-align: left;
+        .state-info-detail,
+        .state-href {
+            width: 100%;
+        }
+    }
+    .content-wrap {
+        display: flex;
+        font-size: 16px;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 24px;
+        align-items: center;
+        width: 200px;
+        height: 300px;
+        float: right;
+        box-sizing: border-box;
+        .state-info{
+            color: #222222;
+        }
+        .state-login{
+            margin: 30px 0 20px;
+            color: #2e8ae6;
+        }
+        .state-sign{
+            color: #2e8ae6;
+        }
+        .state-info-detail{
+            margin-bottom: 16px;
+        }
+        .state-info-number{
+            font-weight: 700;
+        }
+        .state-href{
+            color: #2e8ae6;
+            .icon-right{
+                font-size: 20px;
+                margin-left: 2px;
+            }
+        }
+    }
+}
+.mall-content{
+    min-height: 370px;
+    max-height: 1250px;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e6ecf2;
+    .Tab_tittle_wrap{
+        margin-top: 15px;
+    }
+    .pager-wrap-content{
+        text-align: center;
+        margin: 20px 0;
+        // position: absolute;
+        // left: 50%;
+        // bottom: 0;
+        // transform: translateX(-50%);
+    }
+    .mall-list{
+        padding: 20px 0 0;
+        .gift-item{
+            margin: 0 21px;
+        }
+    }
+}
+.mall-banner{
+    // position: absolute;
+    // bottom: 0;
+    display: block;
+    width: 1240px;
+    height: 140px;
+    margin:20px 0 60px;
+    background:url('/envo/supplier-integral/img/bottomBanner.png') no-repeat;
+    cursor: pointer;
+}
+.sticky-wrapper,.sticky-footer{
+    min-width:1280px;
+}
